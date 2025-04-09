@@ -128,10 +128,10 @@ const Navbar = () => {
       {/* Logo removed */}
       <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
         <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-        <li><Link to="/pricing" onClick={toggleMenu}>Pricing</Link></li>
+        <li><Link to="/booking" onClick={toggleMenu}>Bookings</Link></li>
         <li><Link to="/about" onClick={toggleMenu}>About Us</Link></li>
         <li><Link to="/gallery" onClick={toggleMenu}>Gallery</Link></li>
-        <li><Link to="/testimonials" onClick={toggleMenu}>Testimonials</Link></li>
+        <li><Link to="/snowcones" onClick={toggleMenu}>Snow Cones</Link></li>
         <li><Link to="/contact" onClick={toggleMenu} className="btn">Contact Us</Link></li>
       </ul>
   
