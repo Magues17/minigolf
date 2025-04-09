@@ -1,10 +1,9 @@
 .hero {
     width: 97%;
-    height: 155vh;
+    height: calc(155vh - 50px); /* Adjust this value based on your navbar height */
     overflow: hidden;
     margin: 0 auto;
-    background: 
-      url('../../assets/lakeside/home.jpg') no-repeat center center;
+    background: url('../../assets/lakeside/home.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -14,6 +13,7 @@
     padding: 2rem;
     box-sizing: border-box;
   }
+  
   
   
 

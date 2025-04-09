@@ -1,0 +1,44 @@
+.snowcones-page {
+    padding: 120px 20px 40px; /* Pushes content below fixed navbar */
+    background-color: #fff;
+    text-align: center;
+    min-height: 100vh;
+  }
+  
+  .snowcones-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+    color: #222;
+  }
+  
+  .snowcones-subtitle {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 2rem;
+  }
+  
+  .snowcones-image-container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .snowcones-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .snowcones-image:hover {
+    transform: scale(1.01);
+  }
+  
+  .snowcones-note {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 2rem;
+    font-style: italic;
+  }
+  
