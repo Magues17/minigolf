@@ -1,0 +1,26 @@
+.hero {
+    width: 97%;
+    height: 155vh;
+    overflow: hidden;
+    margin: 0 auto;
+    background: 
+      url('../../assets/lakeside/home.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  
+
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: 500;
+  }
+  

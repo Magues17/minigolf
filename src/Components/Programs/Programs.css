@@ -1,0 +1,120 @@
+.programs {
+    margin: 80px auto;
+    width: 65%;
+    display: flex;
+    align-items: flex-start; /* Aligns cards at the top */
+    justify-content: space-around; /* Makes cards closer together */
+    gap: 20px;
+    padding: 20px;
+}
+
+.program {
+    flex-basis: 31%;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.programs img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.caption {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 15, 152, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.caption img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.program:hover .caption {
+    opacity: 1;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    flex: 1; /* Ensures equal width for all cards */
+    max-width: 350px; /* Increase size of cards */
+    height: 400px; /* Set consistent height for better alignment */
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures price aligns at the bottom */
+    height: 100%; /* Sets consistent height for content */
+}
+
+.card-content h3 {
+    font-size: 1.5em; /* Increase font size for better readability */
+    margin: 10px 0;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 1em;
+    color: #666;
+    flex-grow: 1;
+}
+.programs .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.programs .bronze-price {
+    color: #e60000 !important; /* Red for Bronze Package */
+}
+
+.programs .silver-price {
+    color: #800080 !important; /* Purple for Silver Package */
+}
+
+.programs .gold-price {
+    color: #0000ff !important; /* Blue for Gold Package */
+}
+
+
+/* Media Query for Responsive Layout */
+@media (max-width: 650px) {
+    .programs {
+        flex-direction: column;
+    }
+    .program, .card {
+        flex-basis: 100%;
+        margin: 20px;
+        max-width: 100%; /* Full width on smaller screens */
+        height: auto; /* Allow flexible height on smaller screens */
+    }
+}

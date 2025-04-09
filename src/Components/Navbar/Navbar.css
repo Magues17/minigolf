@@ -1,0 +1,126 @@
+
+
+
+
+nav {
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  
+    background: rgba(0, 0, 0, 0.4); /* Add this */
+    backdrop-filter: blur(6px);    /* Optional: adds a frosted glass effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+  }
+  
+  nav::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #fff, #999, #fff); /* optional flair */
+  }
+  
+    
+
+
+.logo {
+    width: 80px; /* Slightly smaller logo to match the thinner navbar */
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px; /* Reduced margin for closer spacing between items */
+    font-size: 16px;
+    letter-spacing: 0.5px; /* Reduces letter spacing */
+}
+
+nav ul li a {
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+  }
+  
+
+/* .dark-nav{
+    background: #212ea0;
+    transition: 0.5s;
+    
+} */
+
+.menu-icon{
+    display: none;
+}
+
+.logo {
+    cursor: pointer;
+    transition: transform 0.3s ease, translate 0.3s ease;
+}
+
+.large-logo {
+    transform: scale(3.5) translateY(30px); /* Adjust the translateY value as needed */
+    position: relative;
+    z-index: 10;
+}
+
+
+
+.dark-nav {
+    background: linear-gradient(to right, red, blue);
+}
+
+
+
+
+/* ----- media query ---------- */
+
+@media (max-width: 1000px) {
+   .logo{ 
+    width: 75px;
+
+   }
+   
+   nav ul li{
+    margin: 5px 10px;
+   } 
+}
+
+@media (max-width: 840px){
+    nav{
+        padding: 8px 0;
+
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #212ea0;
+        z-index: -1;
+        width: 215px;
+        padding-top: 70px;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px 40px;
+    }
+    .menu-icon{
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }
+    .hide-mobile-menu{
+        right: -215px;
+    }
+}
+
+
