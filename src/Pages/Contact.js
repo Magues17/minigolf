@@ -34,6 +34,9 @@ const Contact = () => {
       }
     };
   return (
+
+    <div className="contact-wrapper">
+  <div className='contact'>
     <div className='contact'>
         <div className='contact-col'>
             <h3>Send us a message <img src={msg_icon} alt=''/></h3>
@@ -61,6 +64,9 @@ const Contact = () => {
             <span>{result}</span>
         </div>
     </div>
+    </div>
+    </div>
+
   )
 }
 

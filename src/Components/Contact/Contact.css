@@ -1,3 +1,17 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+
+
 .contact{
     margin: 80px auto;
     max-width: 90%;
