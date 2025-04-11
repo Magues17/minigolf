@@ -1,26 +1,46 @@
 .hero {
-    width: 97%;
-    height: calc(155vh - 50px); /* Adjust this value based on your navbar height */
-    overflow: hidden;
-    margin: 0 auto;
-    background: url('../../assets/lakeside/home.jpg') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    box-sizing: border-box;
-  }
-  
-  
-  
+  width: 84%;
+  height: 100vh; /* More fluid than a fixed 1000px */
+  overflow: hidden;
+  margin: 0 auto;
+  background: 
+    url('../../assets/lakeside/home.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
 
-  
-  .hero-text p {
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    font-weight: 500;
+/* Responsive image height for smaller screens */
+@media (max-width: 768px) {
+  .hero {
+    height: 84vh; /* Shrinks for tablets/phones */
+    background-position: center top; /* Adjust focus */
   }
-  
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 50vh;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 13px;
+  }
+}

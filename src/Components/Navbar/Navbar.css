@@ -106,7 +106,17 @@ nav ul li a {
         
       }
       
+      nav ul {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px); /* for Safari */
+        background-color: rgba(0, 0, 0, 0.6); /* fallback for Chrome */
+      }
 
+      nav ul {
+        will-change: transform;
+      }
+      
+      
   
       nav ul li {
         display: block;

@@ -12,8 +12,11 @@ import Footer from "./Components/Footer/Footer.js";
 const App = () => {
   return (
     <Router>
+      <div className="app-wrapper">
       <Navbar />
+      <main className="content">
       <Routes>
+      
         <Route path="/" element={<Home />} />
         {/* Add more routes like this: */}
         <Route path="/booking" element={<Booking />} />
@@ -21,8 +24,11 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/Snowcones" element={<Snowcones />} />
+     
       </Routes>
+      </main>
       <Footer />
+      </div>
     </Router>
   );
 };

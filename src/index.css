@@ -51,6 +51,21 @@ background: #212ea0;
 color: white
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+
 /* ----- media query ---------- */
 
 @media (max-width: 1200px){
